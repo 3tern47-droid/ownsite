@@ -33,10 +33,111 @@ body {
 	font-family: 'Exo 2', sans-serif;
 	background: #000000;
 	color: var(--text-primary);
-	overflow-x: hidden;
+	overflow: hidden; /* Prevent main body scroll */
 	line-height: 1.6;
 	position: relative;
 	font-weight: 400;
+	height: 100vh;
+}
+
+/* Split Screen Layout */
+.split-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding-top: 80px; /* Space for fixed nav */
+}
+
+.split-side {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 2rem;
+    scrollbar-width: none; /* Firefox */
+}
+
+.split-side::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.split-left {
+    border-right: none;
+}
+
+.split-right {
+    border-left: none;
+}
+
+/* Middle Line */
+.middle-line {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    bottom: 0;
+    width: 2px;
+    background: var(--muted-gradient);
+    box-shadow: 0 0 15px var(--neon-pink), 0 0 5px var(--neon-blue);
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+/* Tile Styling */
+.tile {
+    min-height: auto;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    background: var(--card-bg);
+    border: 1px solid rgba(184, 48, 106, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 100%;
+}
+
+section.tile {
+    display: block;
+    margin-top: 0;
+}
+
+/* Adjustments for split view */
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+}
+
+.glitch {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-container, .specialty-grid, .contact-container, .about-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    .split-container {
+        flex-direction: column;
+        height: auto;
+        padding-top: 80px;
+    }
+    .split-side {
+        height: auto;
+        overflow: visible;
+    }
+    .middle-line {
+        display: none;
+    }
 }
 
 /* Gradient background with more color */

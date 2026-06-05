@@ -30,51 +30,68 @@ document.querySelectorAll('.nav-link').forEach(link => {
    });
 });
 
-// Smooth scrolling for navigation links
+// Independent Scrolling Logic
+const leftSide = document.getElementById('left-side');
+const rightSide = document.getElementById('right-side');
+
+function handleScroll(e) {
+    // Determine which side the cursor is on
+    const isOverLeft = e.clientX < window.innerWidth / 2;
+    const target = isOverLeft ? leftSide : rightSide;
+    const other = isOverLeft ? rightSide : leftSide;
+
+    // We don't need to manually scroll because the browser handles scroll on overflow elements.
+    // However, we can ensure focus or prevent the other side from scrolling if needed.
+    // In a split layout with overflow: auto on containers, the browser scrolls the element under the cursor by default.
+}
+
+// Smooth scrolling for navigation links targeting specific sides
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
       const targetId = this.getAttribute('href');
       const target = document.querySelector(targetId);
 
       if (target) {
-         target.scrollIntoView({
-            behavior: 'smooth'
-         });
+         e.preventDefault();
+         // Find which container the target is in
+         const container = target.closest('.split-side');
+         if (container) {
+             container.scrollTo({
+                top: target.offsetTop - 20,
+                behavior: 'smooth'
+             });
+         } else {
+             target.scrollIntoView({ behavior: 'smooth' });
+         }
       }
    });
 });
 
-// Active navigation link
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-link');
-
-window.addEventListener('scroll', () => {
+// Active navigation link detection for split containers
+function updateActiveLink() {
    let current = '';
+   const sections = document.querySelectorAll('.tile');
+   
    sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (window.pageYOffset >= sectionTop - 200) {
-         current = section.getAttribute('id');
+      const container = section.closest('.split-side');
+      if (container) {
+          if (container.scrollTop >= sectionTop - 100) {
+             current = section.getAttribute('id');
+          }
       }
    });
 
-   navLinks.forEach(link => {
+   document.querySelectorAll('.nav-link').forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href').substring(1) === current) {
          link.classList.add('active');
       }
    });
-});
+}
 
-// Add parallax effect to hero section
-window.addEventListener('scroll', () => {
-   const scrolled = window.pageYOffset;
-   const hero = document.querySelector('.hero-title');
-   if (hero) {
-      hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-   }
-});
+leftSide.addEventListener('scroll', updateActiveLink);
+rightSide.addEventListener('scroll', updateActiveLink);
 
 // Tab functionality
 function showTab(tabName) {
@@ -99,29 +116,3 @@ function showTab(tabName) {
       clickedButton.classList.add('active');
    }
 }
-
-// Add hover effect to menu items
-document.querySelectorAll('.menu-list li').forEach(item => {
-   item.addEventListener('mousemove', (e) => {
-      const rect = item.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const link = item.querySelector('a');
-      if (link) {
-         link.style.background = `
-                        linear-gradient(90deg, 
-                        rgba(109, 63, 179, 0.1) 0%, 
-                        rgba(109, 63, 179, 0.05) ${x / rect.width * 100}%, 
-                        transparent 100%)
-                    `;
-      }
-   });
-
-   item.addEventListener('mouseleave', () => {
-      const link = item.querySelector('a');
-      if (link) {
-         link.style.background = 'transparent';
-      }
-   });
-});
