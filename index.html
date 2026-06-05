@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Brew - Cyberpunk Cafe</title>
+    <title>Licenses and Roles - Cyberpunk Cafe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -29,34 +29,13 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">NEXUS BREW</div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <div class="logo">Licenses and Roles</div>
         </div>
     </nav>
 
     <div class="split-container">
         <!-- Left Side -->
         <div class="split-side split-left" id="left-side">
-            <!-- Home Section Tile -->
-            <section id="home" class="tile">
-                <h1 class="hero-title">NEXUS BREW</h1>
-                <p class="hero-subtitle">Where Coffee Meets Cyberpunk</p>
-                <div class="hero-buttons">
-                    <a href="#menu" class="cta-button">Explore Our Matrix</a>
-                    <a href="#specialty" class="cta-button cta-secondary">View Specialties</a>
-                </div>
-            </section>
-
             <!-- Specialty Section Tile -->
             <section id="specialty" class="tile">
                 <h2 class="glitch">SPECIALTY</h2>
@@ -73,30 +52,6 @@
                         <div class="specialty-icon">🧬</div>
                         <h3>Bio-Enhanced Blends</h3>
                         <p>Experience coffee infused with nootropics and adaptogens.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section Tile -->
-            <section id="contact" class="tile">
-                <h2 class="glitch">CONTACT</h2>
-                <div class="contact-container">
-                    <div class="contact-form">
-                        <form onsubmit="event.preventDefault(); alert('Message sent to the matrix!');">
-                            <div class="form-group">
-                                <label for="name">Neural ID</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Digital Address</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Transmission</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-btn">Send to Matrix</button>
-                        </form>
                     </div>
                 </div>
             </section>
@@ -129,31 +84,11 @@
                 </div>
             </section>
 
-            <!-- About Section Tile -->
-            <section id="about" class="tile">
-                <h2 class="glitch">ABOUT US</h2>
-                <div class="about-tabs">
-                    <button class="tab-button active" onclick="showTab('story')">Our Story</button>
-                </div>
-                <div id="story" class="tab-content active">
-                    <div class="about-content">
-                        <div class="about-text">
-                            <h3>The Birth of Digital Coffee Culture</h3>
-                            <p>In 2045, a group of rogue programmers and coffee enthusiasts had a vision: to create a sanctuary where technology and coffee converge.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- Footer Section Tile (Small) -->
             <footer class="tile">
                 <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="#privacy">Privacy Policy</a>
-                        <a href="#terms">Terms of Service</a>
-                    </div>
                     <div class="copyright">
-                        © 2026 Nexus Brew. | Design: <a href="https://www.tooplate.com" target="_blank">Tooplate</a>
+                        © 2026 Licenses and Roles. | Design: <a href="https://www.tooplate.com" target="_blank">Tooplate</a>
                     </div>
                 </div>
             </footer>
