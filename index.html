@@ -10,11 +10,8 @@
     <link href="tooplate-nexus-brew.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Static patterns -->
     <div class="static-pattern"></div>
     <div class="hex-pattern"></div>
-    
-    <!-- Animated background shapes -->
     <div class="bg-shapes">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
@@ -22,11 +19,8 @@
         <div class="shape shape-4"></div>
         <div class="shape shape-5"></div>
     </div>
-    
-    <!-- Grid overlay -->
     <div class="grid-overlay"></div>
 
-    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <div class="logo">LICENSE MATRIX</div>
@@ -38,164 +32,223 @@
         <div class="split-side split-left" id="left-side">
             <h2 class="glitch">MICROSOFT</h2>
             <div class="tile-grid">
-                <!-- 20 Microsoft Tiles -->
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>M365 F1</h3>
                     <div class="tile-content">
-                        <p>Imagine a walkie-talkie for people who work on their feet and don't have a desk. It helps them talk to their team and see their work schedule on a phone.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Designed for frontline workers who primarily use mobile devices.</li>
+                            <li><strong>Access:</strong> Teams, Viva, and SharePoint.</li>
+                            <li><strong>Apps:</strong> Teams (Communication), Viva Learning, Stream.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/frontline-workers-f1" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>M365 F3</h3>
                     <div class="tile-content">
-                        <p>This is like a small toolbox for people who share a computer. It gives them a safe place to keep their work and use simple tools to get things done.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Full productivity for frontline workers on shared or dedicated devices.</li>
+                            <li><strong>Access:</strong> Office web apps, Windows 11 Enterprise, and Endpoint Manager.</li>
+                            <li><strong>Apps:</strong> Word/Excel (Web), Teams, Outlook, Forms.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/frontline-workers-f3" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Business Basic</h3>
                     <div class="tile-content">
-                        <p>This gives you tools that live only on the internet. It's like having a shared notebook and a chat room where your small team can work together online.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Core cloud services for small businesses up to 300 users.</li>
+                            <li><strong>Access:</strong> Email hosting, online Office apps, and cloud storage.</li>
+                            <li><strong>Apps:</strong> Teams, OneDrive (1TB), Exchange, SharePoint.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-basic" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Business Standard</h3>
                     <div class="tile-content">
-                        <p>This is the classic set of tools like Word and Excel that you can put right on your own computer. It's great for people who like to work both online and offline.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Full productivity with desktop apps for small businesses.</li>
+                            <li><strong>Access:</strong> Desktop installations on 5 devices per user plus cloud services.</li>
+                            <li><strong>Apps:</strong> Word, Excel, PowerPoint, Outlook (Desktop & Web).</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-standard" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Business Premium</h3>
                     <div class="tile-content">
-                        <p>This is a super safe version of the tools. It's like having a security guard for your computer and your files so bad guys can't get in.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Advanced security and device management for growing teams.</li>
+                            <li><strong>Access:</strong> Defender for Business, Intune, and Information Protection.</li>
+                            <li><strong>Apps:</strong> All Standard apps + Advanced Security tools.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>M365 E3</h3>
                     <div class="tile-content">
-                        <p>A giant toolbox for very big companies. It lets thousands of people talk, share big files, and keep everything tidy in one huge digital office.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Enterprise-grade productivity and security for unlimited users.</li>
+                            <li><strong>Access:</strong> Core security, compliance, and OS rights.</li>
+                            <li><strong>Apps:</strong> Full Office Suite + Security Center.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/enterprise/e3" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>M365 E5</h3>
                     <div class="tile-content">
-                        <p>The ultimate smart toolbox. It has robots that watch out for danger and helps big companies understand all their numbers in a very clever way.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> The highest level of protection and data analytics.</li>
+                            <li><strong>Access:</strong> XDR security, Power BI Pro, and Phone System.</li>
+                            <li><strong>Apps:</strong> Everything in E3 + Defender P2 + Power BI.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/enterprise/e5" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Azure Free</h3>
                     <div class="tile-content">
-                        <p>A free playground where you can try building your own websites or apps without spending any money for a whole year.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Learning and testing Azure cloud services.</li>
+                            <li><strong>Access:</strong> 12 months of popular services + always free services.</li>
+                            <li><strong>Apps:</strong> Virtual Machines, SQL Database, App Service.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Azure Pay-Go</h3>
                     <div class="tile-content">
-                        <p>Like a light switch! You only pay for the cloud power you use. If you turn it off, you stop paying. Very simple.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Flexible cloud computing without upfront costs.</li>
+                            <li><strong>Access:</strong> Immediate access to 200+ Azure products.</li>
+                            <li><strong>Apps:</strong> All Azure Cloud Services (Compute, Storage, Networking).</li>
+                        </ul>
                         <div class="source">Source: <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/pay-as-you-go/" target="_blank">Azure Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Azure Reserved</h3>
                     <div class="tile-content">
-                        <p>If you promise to use the same cloud tools for a long time, Microsoft gives you a huge discount. It's like buying a long-term bus pass.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Cost savings for predictable workloads.</li>
+                            <li><strong>Access:</strong> Deep discounts (up to 72%) with 1 or 3-year commitments.</li>
+                            <li><strong>Apps:</strong> VM Instances, SQL Managed Instances.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://azure.microsoft.com/en-us/pricing/reserved-instances/" target="_blank">Azure Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Windows 11 Pro</h3>
                     <div class="tile-content">
-                        <p>A computer system built for work. it has extra locks and tools to help you do your job better than a regular home computer.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> OS for professional and business use cases.</li>
+                            <li><strong>Access:</strong> BitLocker, Windows Information Protection, and Remote Desktop.</li>
+                            <li><strong>Apps:</strong> Windows OS with Business tools.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/windows/business/windows-11-pro" target="_blank">Windows Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Windows 11 Ent</h3>
                     <div class="tile-content">
-                        <p>A special computer system for huge offices. It lets the boss manage thousands of computers all at once from their own desk.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Advanced OS management for large enterprises.</li>
+                            <li><strong>Access:</strong> DirectAccess, BranchCache, and AppLocker.</li>
+                            <li><strong>Apps:</strong> Windows OS with Enterprise-exclusive features.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/windows/business/windows-11-enterprise" target="_blank">Windows Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>SQL Server Std</h3>
                     <div class="tile-content">
-                        <p>A big digital filing cabinet that keeps all your company's important information safe and organized so you can find it fast.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Core database functionality for departments or small apps.</li>
+                            <li><strong>Access:</strong> 24 cores and 128GB of memory max per instance.</li>
+                            <li><strong>Apps:</strong> SQL Database Engine, Reporting Services.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022-pricing" target="_blank">SQL Server Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>SQL Server Ent</h3>
                     <div class="tile-content">
-                        <p>A giant, lightning-fast filing cabinet. It can hold almost infinite information and never slows down, even when it's super full.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Mission-critical database performance and scale.</li>
+                            <li><strong>Access:</strong> Unlimited cores and memory access.</li>
+                            <li><strong>Apps:</strong> High Availability, Data Warehousing, Advanced Analytics.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022-pricing" target="_blank">SQL Server Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Dynamics 365 BC</h3>
                     <div class="tile-content">
-                        <p>A helper for running a small shop. It keeps track of what you sell, how much money you have, and who needs to be paid.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> All-in-one business management for SMBs.</li>
+                            <li><strong>Access:</strong> Financials, Sales, Service, and Operations.</li>
+                            <li><strong>Apps:</strong> ERP and CRM integrated platform.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://dynamics.microsoft.com/en-us/business-central/overview/" target="_blank">Dynamics Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Dynamics 365 Sales</h3>
                     <div class="tile-content">
-                        <p>A smart helper that remembers all your customers' names and what they like, so you can help them even better.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Empowering sales teams with AI and insights.</li>
+                            <li><strong>Access:</strong> Lead management, sales forecasting, and social selling.</li>
+                            <li><strong>Apps:</strong> CRM Sales Hub.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://dynamics.microsoft.com/en-us/sales/overview/" target="_blank">Dynamics Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Power BI Pro</h3>
                     <div class="tile-content">
-                        <p>Takes long lists of boring numbers and turns them into colorful pictures and charts so your whole team can understand them easily.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Self-service data visualization and sharing.</li>
+                            <li><strong>Access:</strong> Publishing and viewing shared dashboards.</li>
+                            <li><strong>Apps:</strong> Power BI Desktop and Service.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://powerbi.microsoft.com/en-us/pricing/" target="_blank">Power BI Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Power BI Prem</h3>
                     <div class="tile-content">
-                        <p>A giant robot brain that looks at every single number in your whole company and tells you secrets about how to do even better.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Enterprise big data analytics and governance.</li>
+                            <li><strong>Access:</strong> Dedicated capacity and advanced AI features.</li>
+                            <li><strong>Apps:</strong> Everything in Pro + Big Data tools.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://powerbi.microsoft.com/en-us/pricing/" target="_blank">Power BI Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>GitHub Free</h3>
                     <div class="tile-content">
-                        <p>A free library where you can save the code for your projects and share it with the whole world if you want to.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Individual developer and open source projects.</li>
+                            <li><strong>Access:</strong> Unlimited public/private repos with 2,000 Action minutes.</li>
+                            <li><strong>Apps:</strong> Git version control, GitHub Actions.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://github.com/pricing" target="_blank">GitHub Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>GitHub Ent</h3>
                     <div class="tile-content">
-                        <p>A private, strong castle for a company's secret code. It has extra walls and guards to keep the code safe and hidden.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Large scale software development with compliance.</li>
+                            <li><strong>Access:</strong> SAML SSO, advanced auditing, and GHAS security.</li>
+                            <li><strong>Apps:</strong> GitHub Enterprise Cloud/Server.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://github.com/pricing" target="_blank">GitHub Official</a></div>
                     </div>
                 </div>
@@ -205,168 +258,227 @@
         <!-- Middle Line -->
         <div class="middle-line"></div>
 
-        <!-- Right Side: AWS -->
+        <!-- Right Side: Amazon -->
         <div class="split-side split-right" id="right-side">
-            <h2 class="glitch">AMAZON (AWS)</h2>
+            <h2 class="glitch">AMAZON</h2>
             <div class="tile-grid">
-                <!-- 20 AWS Tiles -->
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
-                    <h3>AWS Free Tier</h3>
+                    <h3>Free Tier</h3>
                     <div class="tile-content">
-                        <p>Like a giant box of cloud toys you can play with for free to see which ones you like the most before you have to pay.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Hands-on experience with AWS services.</li>
+                            <li><strong>Access:</strong> 12-Month Free, Always Free, and Short-term trials.</li>
+                            <li><strong>Apps:</strong> EC2 (750h), S3 (5GB), RDS.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/free/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Basic Support</h3>
                     <div class="tile-content">
-                        <p>A simple guide that helps you with your bill and points you to the instruction books if you get stuck.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Fundamental account and billing assistance.</li>
+                            <li><strong>Access:</strong> 24/7 customer service and whitepapers.</li>
+                            <li><strong>Apps:</strong> AWS Trusted Advisor (7 checks).</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
-                    <h3>Developer Support</h3>
+                    <h3>Developer Supp</h3>
                     <div class="tile-content">
-                        <p>You can send an email to a cloud expert during the day if you're building something and need a little advice.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Guidance for early development on AWS.</li>
+                            <li><strong>Access:</strong> Email support with 12-24h response times.</li>
+                            <li><strong>Apps:</strong> Cloud Support Associates.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
-                    <h3>Business Support+</h3>
+                    <h3>Business Supp+</h3>
                     <div class="tile-content">
-                        <p>A 24/7 phone line to talk to experts anytime your cloud tools aren't working right. They help you fix it fast!</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Production workloads in the cloud.</li>
+                            <li><strong>Access:</strong> 24/7 phone/chat/email with 1h response for failures.</li>
+                            <li><strong>Apps:</strong> Full Trusted Advisor, AWS Health API.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Ent On-Ramp</h3>
                     <div class="tile-content">
-                        <p>A faster help lane for companies that are growing big. You get to talk to special helpers who know your cloud well.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Business-critical workloads with faster support.</li>
+                            <li><strong>Access:</strong> 30-min response for critical issues and TAM pool.</li>
+                            <li><strong>Apps:</strong> Support Case management and Training.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Enterprise Supp</h3>
                     <div class="tile-content">
-                        <p>You get a dedicated friend at AWS whose only job is to help your giant company stay happy and safe in the cloud.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Mission-critical workloads for large scale.</li>
+                            <li><strong>Access:</strong> 15-min response and Designated Technical Account Manager.</li>
+                            <li><strong>Apps:</strong> Operations and Well-Architected Reviews.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Unified Ops</h3>
                     <div class="tile-content">
-                        <p>The ultimate care package. AWS experts watch your cloud day and night to fix problems before you even notice them.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Proactive managed operations for enterprises.</li>
+                            <li><strong>Access:</strong> 24/7 proactive monitoring and 5-min response SLAs.</li>
+                            <li><strong>Apps:</strong> Managed Incident Detection and Response.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/unified-operations/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
-                    <h3>AWS Marketplace</h3>
+                    <h3>Marketplace</h3>
                     <div class="tile-content">
-                        <p>A giant digital store where you can buy pre-made cloud tools from other people to help your business grow.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Buying and deploying 3rd party software.</li>
+                            <li><strong>Access:</strong> Thousands of software listings from independent vendors.</li>
+                            <li><strong>Apps:</strong> SaaS, AMIs, Containers.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/marketplace" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Savings Plans</h3>
                     <div class="tile-content">
-                        <p>Like a monthly pass! You promise to spend a certain amount every hour, and AWS gives you a much cheaper price.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Flexible cost reduction for compute usage.</li>
+                            <li><strong>Access:</strong> Up to 72% discount based on commitment ($/hr).</li>
+                            <li><strong>Apps:</strong> EC2, Lambda, Fargate.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/savingsplans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Reserved Inst</h3>
                     <div class="tile-content">
-                        <p>You "save a seat" for your cloud computers for a year or more. Because you promised, AWS makes it much cheaper for you.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Capacity reservation and cost savings.</li>
+                            <li><strong>Access:</strong> Specific instance type discounts for 1 or 3 years.</li>
+                            <li><strong>Apps:</strong> EC2, RDS, Redshift.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/ec2/pricing/reserved-instances/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Dedicated Hosts</h3>
                     <div class="tile-content">
-                        <p>A whole computer in the AWS cloud that only you are allowed to use. No sharing with anyone else allowed!</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Compliance and software licensing (BYOL).</li>
+                            <li><strong>Access:</strong> Physical server dedicated for your use.</li>
+                            <li><strong>Apps:</strong> EC2 with host visibility.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/ec2/dedicated-hosts/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Spot Instances</h3>
                     <div class="tile-content">
-                        <p>Using the "leftover" computers that nobody else is using right now for a super, super cheap price. Like a flash sale!</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Fault-tolerant apps at extreme discounts.</li>
+                            <li><strong>Access:</strong> Up to 90% off using spare capacity.</li>
+                            <li><strong>Apps:</strong> Big data, CICD, stateless apps.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/ec2/spot/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>AWS IQ</h3>
                     <div class="tile-content">
-                        <p>A place where you can find and hire a cloud expert to help you build one specific thing for your business.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Hiring AWS-certified freelancers.</li>
+                            <li><strong>Access:</strong> On-demand project help from experts.</li>
+                            <li><strong>Apps:</strong> Direct portal to third-party consultants.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://iq.aws.amazon.com/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>AWS Activate</h3>
                     <div class="tile-content">
-                        <p>A special helper pack for new startups that gives them free cloud credits and training to get started fast.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Support for startups to scale quickly.</li>
+                            <li><strong>Access:</strong> Up to $100k in credits and business support.</li>
+                            <li><strong>Apps:</strong> Startup portal and training.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/activate/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
-                    <h3>Managed Services</h3>
+                    <h3>AMS</h3>
                     <div class="tile-content">
-                        <p>AWS does the boring and hard parts of running your computers so you can focus on the fun parts of your business.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Automated AWS infrastructure management.</li>
+                            <li><strong>Access:</strong> Operational excellence and security compliance.</li>
+                            <li><strong>Apps:</strong> Managed monitoring and patching.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/managed-services/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>ProServe</h3>
                     <div class="tile-content">
-                        <p>A team of master builders from AWS who come to help you plan and build very big and complicated cloud projects.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Specialized consulting for cloud transition.</li>
+                            <li><strong>Access:</strong> Expert-led planning and execution.</li>
+                            <li><strong>Apps:</strong> Strategic roadmap workshops.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/professional-services/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>AWS Training</h3>
                     <div class="tile-content">
-                        <p>A school where you can learn everything about how the cloud works and get special badges to show you're an expert.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Skill building for cloud roles.</li>
+                            <li><strong>Access:</strong> Digital and classroom learning paths.</li>
+                            <li><strong>Apps:</strong> Skill Builder and Certifications.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/training/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Private Market</h3>
                     <div class="tile-content">
-                        <p>A special store where only people in your company can buy the apps your boss has already said are okay to use.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Governing software procurement.</li>
+                            <li><strong>Access:</strong> Curated list of approved software for your company.</li>
+                            <li><strong>Apps:</strong> Custom Marketplace portal.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/marketplace/features/private-marketplace" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Control Tower</h3>
                     <div class="tile-content">
-                        <p>A dashboard that helps you set up and manage many cloud accounts at once while keeping them all safe and tidy.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Multi-account environment setup.</li>
+                            <li><strong>Access:</strong> Landing zone with guardrails and compliance.</li>
+                            <li><strong>Apps:</strong> Account Factory and Dashboard.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/controltower/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <button class="close-tile">&times;</button>
                     <h3>Well-Arch Tool</h3>
                     <div class="tile-content">
-                        <p>A health check-up for your cloud. It tells you if you're spending too much money or if your cloud might break.</p>
+                        <ul>
+                            <li><strong>Purpose:</strong> Auditing cloud architecture.</li>
+                            <li><strong>Access:</strong> Automated reviews against 6 pillars.</li>
+                            <li><strong>Apps:</strong> Review console and reports.</li>
+                        </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/well-architected/tool/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
