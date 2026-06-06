@@ -32,235 +32,894 @@
         <div class="split-side split-left" id="left-side">
             <h2 class="glitch">MICROSOFT</h2>
             <div class="tile-grid">
-                <!-- M365 F1 -->
+                <!-- 1. M365 F1 -->
                 <div class="cube-tile" onclick="toggleTile(this)">
                     <h3>M365 F1</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                This license is built to connect frontline workers—the pulse of the organization—who primarily work on mobile or shared devices. It bridges the gap between the deskless workforce and corporate headquarters, ensuring everyone is aligned with company culture and communication.
+                                This license is engineered to connect frontline workers who primarily operate on mobile devices. it serves as a digital bridge between the deskless workforce and corporate headquarters, ensuring cultural alignment and secure communication across the entire organization.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                Assigned as a <strong>User-Based License</strong> via the Microsoft 365 Admin Center or through automated "Group-Based Licensing" in Microsoft Entra ID. It carries specific "Service Plans" that restrict desktop app usage, enforcing a "cloud-first" policy to keep costs low while maintaining secure access.
+                                Assigned as a user-based license through the Microsoft 365 Admin Center. It enforces specific service plans that prioritize web and mobile access, maintaining a cost-effective cloud-first policy while securing identity through Entra ID.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Administrators manage these users through the <strong>Microsoft 365 Admin Center</strong> and <strong>Microsoft Teams Admin Center</strong>. Compliance and security policies are enforced via Entra ID (formerly Azure AD) Conditional Access, ensuring frontline data remains within the corporate perimeter.
+                                Administrators deploy and manage these accounts via the Microsoft 365 and Teams Admin Centers. Security is maintained through conditional access policies within Entra ID, ensuring corporate data remains protected on mobile endpoints.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Includes Teams (Communication), SharePoint/OneDrive (Read-only/Limited), Viva Connections, Stream, and basic Entra ID Plan 1 security features.
+                                Includes Microsoft Teams, SharePoint Online, OneDrive for Business (read-only), Viva Connections, and Stream.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/frontline-workers-f1" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
 
-                <!-- Business Premium -->
+                <!-- 2. M365 F3 -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>M365 F3</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Designed for frontline workers who require a higher degree of productivity and the ability to create and edit content. It provides the full digital environment needed for shift-based roles that interact deeply with business processes.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                This is a user-based subscription that includes rights to Windows Enterprise. It allows for flexible deployment on shared devices, utilizing policy-driven management to ensure secure session handling for multiple users on a single terminal.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the Microsoft 365 Admin Center and Microsoft Intune for device-level oversight. Deployment is often automated via Windows Autopilot to streamline hardware preparation for frontline environments.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Office Web/Mobile Apps, Windows 11 Enterprise, Teams, Outlook, Forms, and Power Automate for frontline tasks.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/frontline-workers-f3" target="_blank">Microsoft Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 3. Business Basic -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Business Basic</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Optimized for small to medium businesses seeking a professional cloud presence. It provides the essential infrastructure for collaboration and email hosting without the overhead of maintaining local software installations.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A user-based license supporting up to 300 seats. It governs access through standard identity policies, providing each user with a professional mailbox and secure cloud storage to facilitate remote teamwork.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Entirely managed within the Microsoft 365 Admin Center. Configuration of mail flow and storage permissions is handled through the Exchange and SharePoint Admin Centers respectively.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Microsoft Teams, Exchange Online, OneDrive for Business (1TB), and SharePoint Online.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-basic" target="_blank">Microsoft Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 4. Business Standard -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Business Standard</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The comprehensive productivity choice for SMBs, combining cloud services with the power of desktop applications. It is ideal for businesses that require high-performance editing and offline work capabilities.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Assigned per user, allowing installation on up to five computers, five tablets, and five mobile devices. It follows a standard licensing governance model that ensures software versions are always up to date across all endpoints.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Management is centralized in the Microsoft 365 Admin Center. Desktop apps are deployed directly by users via the Office portal or managed by IT through lightweight deployment tools.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Word, Excel, PowerPoint, Outlook, OneNote (Desktop & Web), Teams, and Exchange.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-standard" target="_blank">Microsoft Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 5. Business Premium -->
                 <div class="cube-tile" onclick="toggleTile(this)">
                     <h3>Business Premium</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                The gold standard for SMBs, offering a comprehensive suite that combines high-end productivity with enterprise-grade security. It's designed to protect against sophisticated cyberthreats and provide mobile device management without the complexity of full Enterprise agreements.
+                                A unified solution that integrates best-in-class productivity with advanced security. It is specifically built to protect growing businesses from sophisticated cyberthreats while providing remote management for a mobile workforce.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                A <strong>User-Based License</strong> limited to 300 seats. It allows for "Shared Computer Activation," meaning a licensed user can sign into Office on multiple machines (like a warehouse terminal) without consuming extra device activations. Policies include Defender for Business (endpoint protection) and Intune (device management).
+                                A user-based subscription with a 300-seat limit. It introduces enterprise-grade policies such as Defender for Business and Intune device enrollment, ensuring all hardware meets corporate security baselines.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Primary management happens in the <strong>Microsoft 365 Admin Center</strong>, with advanced security configuration in the <strong>Microsoft Defender Portal</strong> and device enrollment in the <strong>Microsoft Intune Admin Center</strong>.
+                                Configuration is handled through the Microsoft 365 Admin Center, with advanced security settings managed in the Microsoft Defender and Intune Admin Centers.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Full Desktop Office Suite (Word, Excel, etc.), Exchange, Teams, OneDrive, SharePoint, Intune, Defender for Business, Azure Information Protection, and Entra ID P1.
+                                All Standard apps, plus Microsoft Intune, Microsoft Defender for Business, and Azure Information Protection.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
 
-                <!-- M365 E5 -->
+                <!-- 6. M365 E3 -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>M365 E3</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The foundational enterprise license for large organizations. It delivers the security, compliance, and management capabilities required to operate thousands of users globally while maintaining strict data governance.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A user-based license with no seat limits. It unlocks advanced governance policies including eDiscovery, data loss prevention (DLP), and enterprise-wide identity management via Entra ID Plan 1.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the Microsoft 365 Admin Center, with specialized configuration in the Microsoft Purview and Security centers for advanced compliance tracking.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Full Office Suite, Windows Enterprise, SharePoint, OneDrive, and core Security & Compliance tools.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/enterprise/e3" target="_blank">Microsoft Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 7. M365 E5 -->
                 <div class="cube-tile" onclick="toggleTile(this)">
                     <h3>M365 E5</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                Microsoft's most powerful offering, focusing on "Self-Healing" security, advanced compliance, and data-driven intelligence. It is intended for organizations that handle highly sensitive data or require advanced voice capabilities and automated threat response.
+                                Microsoft's premier enterprise offering, emphasizing automated security and advanced analytics. It is designed for organizations that require the highest levels of data protection and intelligent business insights.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                This is a <strong>User-Based License</strong> with no seat limits. It unlocks advanced policies like "Automatic Sensitivity Labeling," "Insider Risk Management," and "Customer Lockbox." It utilizes Entra ID P2 for Identity Protection and Privileged Identity Management (PIM).
+                                A comprehensive user-based license that includes advanced identity protection and insider risk management. It governs automated threat response and sophisticated data auditing across the entire tenant.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Centrally managed through the <strong>Microsoft 365 Admin Center</strong>, but extensively configured in the <strong>Microsoft Purview Compliance Portal</strong> and the <strong>Security & Compliance Center</strong>. Voice features are managed in the Teams Admin Center.
+                                Centrally managed in the Microsoft 365 Admin Center, with deep configuration in the Defender for Cloud, Purview, and Power BI administration portals.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Everything in E3 + Power BI Pro, Teams Phone, Audio Conferencing, Defender for Office 365 P2, Defender for Endpoint P2, and Defender for Identity.
+                                Everything in E3, plus Power BI Pro, Teams Phone, Defender for Endpoint P2, and advanced compliance tools.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/microsoft-365/enterprise/e5" target="_blank">Microsoft Official</a></div>
                     </div>
                 </div>
 
-                <!-- Azure Pay-Go -->
+                <!-- 8. Azure Free -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Azure Free</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Provides an entry point for developers and architects to explore cloud capabilities. It facilitates experimentation with modern cloud services without immediate financial commitment, fostering innovation and skills development.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A subscription-level offer tied to a new Microsoft account. It includes a specific credit amount for 30 days and a set of "Always Free" services governed by strict resource quotas to prevent overages.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Accessed and managed via the Azure Portal. Usage monitoring and remaining credits are tracked in the Cost Management + Billing section of the console.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Access to popular Azure services like Virtual Machines, SQL Databases, and App Services within defined free limits.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 9. Azure Pay-Go -->
                 <div class="cube-tile" onclick="toggleTile(this)">
                     <h3>Azure Pay-Go</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                Provides a friction-less entry into cloud computing, allowing organizations to scale resources up or down based on real-time demand. It eliminates capital expenditure by shifting to an operational expenditure model where you only pay for what you consume.
+                                Offers the ultimate flexibility for cloud resource consumption. It enables organizations to scale their digital infrastructure in real-time based on demand, shifting from capital to operational expenditure models.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                This is a <strong>Subscription-Based Model</strong> tied to a tenant. Usage is governed by "Azure Policy" and "Management Groups" to prevent unauthorized resource creation. Billing is calculated based on hourly or per-second resource consumption (Compute, Storage, etc.).
+                                A standard subscription model where billing is based on actual resource usage. Governance is applied through Azure Policy and Role-Based Access Control (RBAC) to ensure cost and security compliance.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Resources are deployed and managed via the <strong>Azure Portal</strong>, Azure CLI, or PowerShell. Cost monitoring is handled in the <strong>Microsoft Cost Management + Billing</strong> center.
+                                Resources are managed through the Azure Portal, CLI, or Infrastructure as Code (ARM/Bicep). Billing and budget alerts are configured in the Azure Cost Management portal.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Grants access to the full Azure catalog: Virtual Machines, Kubernetes Service (AKS), Azure SQL, AI Services, and App Services.
+                                Access to the entire Azure catalog of over 200 products including Compute, AI, Networking, and Storage.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/pay-as-you-go/" target="_blank">Azure Official</a></div>
                     </div>
                 </div>
 
-                <!-- Windows 11 Ent -->
+                <!-- 10. Azure Reserved -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Azure Reserved</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                A cost-saving strategy for predictable, long-term workloads. By committing to specific resources, organizations can achieve significant discounts compared to standard pay-as-you-go rates.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A commitment-based model for 1 or 3-year terms. It requires upfront or monthly payments for reserved capacity, governed by reservation policies that allow for flexibility and exchanges within the Azure ecosystem.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Purchased and managed through the "Reservations" section of the Azure Portal. Automatic application of discounts is tracked via the billing dashboard.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Applicable to Virtual Machine instances, Azure SQL Databases, and Cosmos DB capacity.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://azure.microsoft.com/en-us/pricing/reserved-instances/" target="_blank">Azure Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 11. Windows 11 Pro -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Windows 11 Pro</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The professional standard for business computing. It provides the essential security and management features required for individual work and small team environments, ensuring local device data is protected.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Typically licensed per device through OEM or Retail channels. It includes rights for BitLocker encryption and domain join, allowing the device to be governed by corporate identity and security policies.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed locally through Settings or centrally via Microsoft Intune and Group Policy. Deployment can be streamlined through Windows Autopilot for business-ready out-of-box experiences.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                The Windows Operating System, including BitLocker, Remote Desktop (Host), and Windows Information Protection.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/windows/business/windows-11-pro" target="_blank">Windows Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 12. Windows 11 Ent -->
                 <div class="cube-tile" onclick="toggleTile(this)">
                     <h3>Windows 11 Ent</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                Designed for large organizations needing advanced security and management features not found in the Pro version. It focuses on device integrity, credential protection, and simplified deployment for thousands of machines.
+                                The elite operating system for large-scale enterprise management. It provides exclusive security features like Credential Guard and advanced management capabilities designed for organizations with complex compliance needs.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                Available as a <strong>User-Based Subscription</strong> (E3/E5) or a <strong>Device-Based Volume License</strong>. It unlocks policies like "AppLocker" for controlling which apps can run and "DirectAccess" for seamless remote connectivity without a traditional VPN.
+                                Assigned as a user-based subscription through Enterprise agreements. It unlocks advanced policies for application control (AppLocker) and direct remote connectivity (DirectAccess), providing a highly secure corporate desktop experience.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Managed via <strong>Microsoft Intune</strong> (Modern Management) or <strong>Group Policy (GPO)</strong> in on-premises AD environments. Deployment is often handled via Windows Autopilot.
+                                Primarily managed through Microsoft Intune and Microsoft Endpoint Configuration Manager. Advanced security policies are configured via the Microsoft 365 Security dashboard.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                The Windows Operating System itself, plus Universal Print, Windows Update for Business, and Microsoft Endpoint Configuration Manager.
+                                Full Windows OS with Enterprise-only features, Universal Print, and Microsoft Endpoint Manager rights.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://www.microsoft.com/en-us/windows/business/windows-11-enterprise" target="_blank">Windows Official</a></div>
                     </div>
                 </div>
 
-                <!-- GitHub Ent -->
+                <!-- 13. SQL Server Std -->
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <h3>GitHub Ent</h3>
+                    <h3>SQL Server Std</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                The ultimate platform for secure, collaborative software development at scale. It provides enterprise-grade administrative controls, security, and compliance features to manage internal and open-source code safely.
+                                The reliable choice for departmental applications and small-scale data management. It provides robust database performance and reporting capabilities for businesses that do not require massive horizontal scale.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                A <strong>User-Based License</strong> managed through a GitHub Enterprise Account. It allows for "Enterprise Managed Users" (EMU), where identities are synced directly from Entra ID, ensuring code access is instantly revoked when an employee leaves.
+                                Licensed either by Core or via a Server+CAL model. It enforces resource limits (up to 24 cores and 128GB RAM) per instance to ensure predictable performance for the targeted workload.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Managed through the <strong>GitHub Enterprise Settings</strong> dashboard. Security features like "Advanced Security" (GHAS) provide secret scanning and code scanning policies across all repositories.
+                                Managed through SQL Server Management Studio (SSMS) and Azure Data Studio. Operational monitoring can be integrated with Azure Arc for hybrid cloud visibility.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                GitHub Repositories, GitHub Actions (CI/CD), GitHub Packages, GitHub Pages, and GitHub Advanced Security (add-on).
+                                SQL Database Engine, SQL Server Reporting Services (SSRS), and basic data integration tools.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022-pricing" target="_blank">SQL Server Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 14. SQL Server Ent -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>SQL Server Ent</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Designed for mission-critical, large-scale data operations. It provides unlimited scalability and advanced high-availability features required for global businesses and high-performance transactional systems.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Licensed strictly by Core to provide access to unlimited hardware resources. It unlocks enterprise policies for data warehousing, advanced encryption (TDE), and sophisticated business intelligence.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Extensive management through SSMS and specialized performance tuning tools. It supports deep integration with Windows Server Failover Clustering for maximum uptime.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Unlimited Core Database Engine, Analysis Services, Always On Availability Groups, and Advanced Analytics.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022-pricing" target="_blank">SQL Server Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 15. Dynamics 365 BC -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Dynamics 365 BC</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                A comprehensive business management solution (ERP) for small to medium organizations. It unifies financials, sales, and operations into a single platform to drive efficiency and informed decision-making.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A user-based subscription model (Essential or Premium). It governs business processes through integrated workflows and role-based permissions, ensuring data integrity across all corporate departments.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the Dynamics 365 Business Central admin center and the Power Platform admin center. It integrates seamlessly with the Microsoft 365 environment.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Financial Management, Sales & Service, Project Management, and Supply Chain Management modules.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://dynamics.microsoft.com/en-us/business-central/overview/" target="_blank">Dynamics Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 16. Dynamics 365 Sales -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Dynamics 365 Sales</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Empowering sales teams with AI-driven insights and relationship management. It focuses on accelerating the sales cycle and fostering customer loyalty through intelligent automation and unified data.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Assigned per user (Professional or Enterprise). It enforces sales process governance through lead-to-opportunity workflows and comprehensive activity tracking to ensure consistent customer interaction.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Configuration is handled within the Power Platform and Dynamics 365 settings. AI features and sales insights are managed through the Sales Hub application.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Lead & Opportunity Management, Sales Forecasting, Social Selling, and Sales Insights (AI).
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://dynamics.microsoft.com/en-us/sales/overview/" target="_blank">Dynamics Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 17. Power BI Pro -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Power BI Pro</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The individual standard for data visualization and collaborative analysis. It enables users to transform raw data into interactive dashboards and share insights across the team to drive business results.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A user-based license that allows for publishing and sharing reports within the corporate tenant. It governs data access through Row-Level Security (RLS) and workspace permissions.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the Power BI Service and the Power Platform Admin Center. Report creation is handled via the Power BI Desktop application.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Power BI Desktop, Power BI Service, and Mobile BI apps.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://powerbi.microsoft.com/en-us/pricing/" target="_blank">Power BI Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 18. Power BI Prem -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Power BI Prem</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The enterprise-grade analytics solution for big data. It provides dedicated cloud capacity and advanced AI features to handle massive datasets and deliver high-performance reporting for the entire organization.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Licensed per user or per capacity (P-SKU). It unlocks enterprise policies for automated data refreshes, paginated reports, and advanced data governance at an organizational scale.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Configuration of dedicated capacity is managed in the Power BI Admin Portal. It supports hybrid scenarios with Power BI Report Server for on-premises hosting.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Everything in Pro, plus Paginated Reports, AI Insights, and Dataflows.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://powerbi.microsoft.com/en-us/pricing/" target="_blank">Power BI Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 19. GitHub Free -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>GitHub Free</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The gateway to collaborative software development. It enables developers to host, track, and share code for personal projects and open-source initiatives within the world's largest coding community.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A free user-based model for individuals and small teams. It governs code access through public and private repositories, providing basic version control and collaboration features without cost.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed directly through the GitHub.com website and local Git CLI tools. Project status is tracked via GitHub Issues and basic project boards.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Unlimited repositories, GitHub Actions (2,000 mins), and GitHub Pages for static hosting.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://github.com/pricing" target="_blank">GitHub Official</a></div>
                     </div>
                 </div>
-                <!-- Note: Remaining tiles would follow this pattern. For brevity in this edit, I'll focus on these high-value examples to demonstrate the depth. -->
+
+                <!-- 20. GitHub Ent -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>GitHub Ent</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The ultimate development platform for secure enterprise collaboration. it provides the administrative oversight and security controls required to manage proprietary code and software supply chains at scale.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A user-based license managed through an Enterprise Account. It allows for single sign-on (SSO) and automated user provisioning, ensuring all developer access is governed by corporate identity standards.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Configured through the GitHub Enterprise Cloud or Server settings dashboard. Advanced security policies are managed in the security center to scan for secrets and vulnerabilities.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                GitHub Repositories, Advanced Security (GHAS), GitHub Actions, and SAML SSO integration.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://github.com/pricing" target="_blank">GitHub Official</a></div>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <!-- Middle Line -->
         <div class="middle-line"></div>
 
         <!-- Right Side: Amazon -->
         <div class="split-side split-right" id="right-side">
             <h2 class="glitch">AMAZON</h2>
             <div class="tile-grid">
-                <!-- AWS Business Support -->
+                <!-- 1. Free Tier -->
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <h3>Business Support</h3>
+                    <h3>Free Tier</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                Provides the technical safety net required for production workloads. It ensures that businesses have 24/7 access to engineers who can assist with infrastructure configuration, troubleshooting, and optimization to minimize downtime.
+                                Enables developers to gain hands-on experience with AWS cloud services without upfront cost. It serves as a playground for learning and building prototypes, reducing the barrier to cloud adoption.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                This is an <strong>Account-Level Subscription</strong>. Billing is the greater of a fixed monthly fee or a percentage of your total monthly AWS usage. It unlocks "Infrastructure Event Management" as a paid add-on for planning major launches.
+                                An account-level offer for new AWS customers. It includes 12-month free, always free, and short-term trial offers, all governed by monthly consumption limits to ensure users stay within the free parameters.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Managed and accessed through the <strong>AWS Support Center</strong> console. Cases can be opened via web, phone, or chat. Policy oversight is provided by the AWS Health Dashboard.
+                                Managed through the AWS Management Console. Usage and billing alerts are configured via the AWS Billing Dashboard to provide visibility into consumption.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                24/7 access to Cloud Support Engineers, Full Trusted Advisor checks, AWS Support API, and Personal Health Dashboard.
+                                EC2 (750h), S3 (5GB), RDS (750h), and over 100 other AWS services within free limits.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/free/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 2. Basic Support -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Basic Support</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Provides the essential foundation for account and billing inquiries. It ensures that all AWS customers have a baseline of support for non-technical administrative tasks and access to general best practices.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Included automatically for all AWS accounts at no cost. It governs access to customer service and billing support, providing a standard safety net for account maintenance and billing clarity.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Accessed via the AWS Support Center. Documentation and re:Post community forums serve as the primary knowledge base for this tier.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                24/7 customer service, Trusted Advisor (7 core checks), and AWS Documentation access.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
 
-                <!-- AWS Enterprise Support -->
+                <!-- 3. Developer Support -->
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <h3>Enterprise Support</h3>
+                    <h3>Developer Supp</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                A proactive partnership designed to help organizations achieve business outcomes in the cloud. It moves beyond reactive break-fix support to provide strategic guidance, operational excellence, and cost optimization at scale.
+                                Specifically designed for developers who are building on AWS and need occasional technical guidance. It provides a direct line to AWS experts to help troubleshoot configuration issues and architecture questions during the development phase.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                A <strong>Tiered Account-Level Subscription</strong>. It includes a designated Technical Account Manager (TAM) who acts as an advocate within AWS. Governance is enhanced through proactive "Well-Architected Reviews" and "Operational Reviews."
+                                An account-based subscription with a monthly fee starting at $29. It governs response times for technical cases (12-24 business hours) and is intended for non-production environments.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Direct access to the TAM and the <strong>AWS Support Center</strong>. Strategic planning happens in the <strong>AWS Management Console</strong> under the guidance of AWS experts.
+                                Cases are opened and tracked through the AWS Support Center. One primary contact can open unlimited technical cases via email.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Designated TAM, Concierge Support team, 15-min response for critical issues, Infrastructure Event Management (included), and Support Automation Workflows.
+                                Email access to Cloud Support Associates and general architectural guidance.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
 
-                <!-- AWS Savings Plans -->
+                <!-- 4. Business Support+ -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Business Support+</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The standard choice for companies running production workloads. It provides 24/7 technical support to ensure infrastructure health and rapid resolution of issues that could impact business operations.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A subscription model where the cost is the greater of a monthly fee ($100) or a percentage of AWS usage. It unlocks enterprise policies for 1-hour response times on production system failures and provides full Trusted Advisor insights.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the AWS Support Center with 24/7 access via phone, chat, and email. It allows for unlimited contacts to open support cases across the entire account.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Full Trusted Advisor checks, AWS Health API, and 24/7 Support Engineer access.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 5. Ent On-Ramp -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Ent On-Ramp</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                A middle-tier offering for organizations transitioning to business-critical cloud operations. It provides a higher level of reactive support and proactive guidance to help bridge the gap toward full enterprise-level partnership.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                An account-level subscription starting at $5,500/month. It governs critical response times (30 minutes) and provides access to a pool of Technical Account Managers (TAMs) to assist with infrastructure planning.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed via the AWS Support Center and regular consultations with the TAM pool. It includes one included "Infrastructure Event Management" review per year.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                TAM Pool access, 30-min critical response, and specialized Support Automation Workflows.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 6. Enterprise Supp -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Enterprise Supp</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                A holistic cloud partnership focused on operational excellence and strategic growth. It provides a designated expert to advocate for your organization within AWS, ensuring mission-critical systems are optimized and resilient.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A premium subscription model starting at $15,000/month. It includes a designated TAM and unlocks policies for 15-minute response times on critical systems, along with proactive operational and architectural reviews.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                High-touch management through the designated TAM and the AWS Support Center. Strategic business reviews and planning happen directly with AWS leadership and engineering teams.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Designated TAM, Concierge Support team, 15-min critical response, and included Infrastructure Event Management.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 7. Unified Ops -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Unified Ops</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                The most advanced operational model, combining enterprise support with proactive incident management. It is designed for large-scale organizations that require AWS to play an active role in monitoring and responding to critical events.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A specialized tier that includes AWS Managed Incident Detection and Response. It governs proactive monitoring policies and ensures a 5-minute response SLA for critical incidents, minimizing potential business impact.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Deeply integrated with AWS monitoring tools and the Managed Services team. Operations are managed through a unified dashboard that tracks incident detection and resolution in real-time.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Everything in Enterprise Support, plus 24/7 Proactive Monitoring and AWS Incident Detection and Response.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/premiumsupport/plans/unified-operations/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 8. Marketplace -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Marketplace</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Simplifies software procurement and deployment for the cloud. It allows organizations to quickly find and launch pre-configured software solutions, centralizing billing and ensuring consistent software governance.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A flexible model supporting various licensing types (PAYG, BYOL, Contract). It allows for the creation of a "Private Marketplace" where admins can govern exactly which products are available for use across the organization.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Accessed through the AWS Marketplace console. Subscriptions are automatically integrated into the consolidated AWS billing system, appearing as line items on the monthly invoice.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Thousands of 3rd party software listings including Security, Data, and DevOps tools.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/marketplace" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 9. Savings Plans -->
                 <div class="cube-tile" onclick="toggleTile(this)">
                     <h3>Savings Plans</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                A flexible pricing model that provides significant savings over On-Demand pricing. It allows organizations to commit to a consistent amount of usage ($ per hour) in exchange for lower rates, regardless of instance family, size, or region.
+                                A revolutionary way to reduce compute costs while maintaining architectural flexibility. It rewards consistent usage with lower rates, allowing businesses to optimize their cloud spend without being locked into specific instance types.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                A <strong>Commitment-Based Model</strong>. Purchases can be made with "No Upfront," "Partial Upfront," or "All Upfront" options. Usage is tracked across the organization's billing family (AWS Organizations), and the discount is applied automatically to eligible resources.
+                                A commitment-based model (1 or 3 years) tied to an hourly dollar spend. Governance is automatic, as the discount is applied to the most expensive eligible usage across the entire AWS Organization first.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Purchased and managed through <strong>AWS Cost Explorer</strong>. Monitoring of "Coverage" and "Utilization" reports happens in the <strong>AWS Billing and Cost Management</strong> console.
+                                Purchased and managed via AWS Cost Explorer. Monitoring of savings, coverage, and utilization happens in the Billing and Cost Management console.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Applies to EC2 instances, AWS Lambda, and AWS Fargate usage.
+                                Applicable to EC2 instances, AWS Lambda, and AWS Fargate usage.
                             </li>
                         </ul>
                         <div class="source">Source: <a href="https://aws.amazon.com/savingsplans/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
 
-                <!-- AWS Marketplace -->
+                <!-- 10. Reserved Inst -->
                 <div class="cube-tile" onclick="toggleTile(this)">
-                    <h3>Marketplace</h3>
+                    <h3>Reserved Inst</h3>
                     <div class="tile-content">
                         <ul>
                             <li><strong>Strategic Value & Core Utility</strong>
-                                A curated digital catalog that simplifies the procurement of third-party software. It allows organizations to find, buy, and deploy software that runs on AWS, consolidating billing and ensuring software meets security standards.
+                                A traditional method for achieving significant cost savings for steady-state workloads. It provides a capacity reservation that ensures resources are always available when needed, coupled with a deep discount over on-demand prices.
                             </li>
                             <li><strong>Provisioning & Governance Model</strong>
-                                A <strong>Usage-Based or Contract-Based Model</strong>. Subscriptions can be "Pay-As-You-Go," "Annual Contracts," or "Private Offers." Governance is managed via "Private Marketplace" policies that restrict which products employees can purchase.
+                                A commitment to a specific instance configuration (family, region, OS) for 1 or 3 years. It is governed by a reservation policy that can be "Standard" or "Convertible," allowing for different levels of flexibility as requirements change.
                             </li>
                             <li><strong>Deployment & Management Interface</strong>
-                                Accessed through the <strong>AWS Marketplace Console</strong>. Subscriptions are billed directly through your AWS account, appearing on your monthly AWS invoice.
+                                Managed within the EC2 or RDS consoles under the "Reserved Instances" section. Utilization is tracked via the AWS Billing Dashboard to ensure maximum ROI.
                             </li>
                             <li><strong>Integrated Ecosystem & Applications</strong>
-                                Thousands of listings including Security (Palo Alto, CrowdStrike), Data (Snowflake), and Infrastructure (Terraform) tools.
+                                Applies to EC2, RDS, Redshift, and ElastiCache instances.
                             </li>
                         </ul>
-                        <div class="source">Source: <a href="https://aws.amazon.com/marketplace" target="_blank">AWS Official</a></div>
+                        <div class="source">Source: <a href="https://aws.amazon.com/ec2/pricing/reserved-instances/" target="_blank">AWS Official</a></div>
                     </div>
                 </div>
-                <!-- Note: I will continue to populate other tiles with similar depth. -->
+
+                <!-- 11. Dedicated Hosts -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Dedicated Hosts</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Ideal for organizations with strict compliance requirements or those using software with per-core licensing (BYOL). It provides a physical server entirely dedicated to your use, offering maximum isolation and control.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                Licensed as a physical server within an AWS region. It governs the placement of EC2 instances onto specific hardware, ensuring that no other customer's workloads share the same physical server.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the "Dedicated Hosts" section of the EC2 console. It allows for the tracking of physical sockets and cores to maintain software license compliance.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Dedicated physical EC2 hardware for private, isolated compute workloads.
+                            </li>
+                        </ul>
+                        <div class="source)Source: <a href="https://aws.amazon.com/ec2/dedicated-hosts/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 12. Spot Instances -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Spot Instances</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Offers the lowest possible price for AWS compute capacity. It is designed for fault-tolerant, flexible workloads such as big data processing and CI/CD pipelines, where cost is the primary driver.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A usage-based model where prices fluctuate based on spare capacity. It is governed by an interruption policy, where AWS can reclaim the capacity with a 2-minute warning, necessitating a highly resilient application architecture.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Requested via the EC2 console or Spot Fleet API. Monitoring of current spot prices and interruption history is handled through the Spot Fleet dashboard.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Spare EC2 capacity for Big Data, CICD, and Stateless applications.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/ec2/spot/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 13. AWS IQ -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>AWS IQ</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Connects AWS customers with certified experts to accelerate project delivery. It provides a secure, streamlined platform for finding and hiring third-party professional help for specific cloud tasks or projects.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A project-based model where payments are handled directly through your AWS bill. It governs the engagement through a secure platform that ensures experts only have access to your environment during the agreed-upon project scope.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Accessed through the AWS IQ portal. Project requests, proposals, and payments are all centralized in the IQ dashboard for easy oversight.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Access to thousands of AWS Certified Experts and professional consultants.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://iq.aws.amazon.com/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 14. AWS Activate -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>AWS Activate</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                A comprehensive support program for startups. It provides the credits, training, and support needed for new companies to build their businesses on AWS from day one, reducing the initial financial burn.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A tiered program based on startup stage and funding. It governs the distribution of AWS credits and technical support, providing a roadmap for startups to grow into full enterprise customers.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the AWS Activate console. Startups can track their credit usage, access training materials, and connect with other founders through the Activate community.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                AWS Credits, Technical Support, and Startup-focused training paths.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/activate/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 15. AMS (Managed Services) -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Managed Serv</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Operates AWS infrastructure on your behalf, allowing your team to focus on application development. It focuses on maintaining operational excellence, security, and compliance through automated management and expert oversight.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A managed operations model that follows a standardized set of best practices (the AMS Landing Zone). It governs infrastructure through automated patching, backup, and incident response policies to ensure a highly reliable environment.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the AMS console and service requests. It integrates with your existing ITSM tools to provide a seamless operational experience for your enterprise workloads.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Automated Patching, Monitoring, Backup, and Managed Security Operations.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/managed-services/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 16. ProServe -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>ProServe</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Provides expert consulting to help you execute complex cloud migrations and modernizations. It leverages AWS best practices and proprietary methodologies to accelerate your digital transformation journey and reduce project risk.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                An engagement-based model where AWS experts work alongside your team. It governs the project through clearly defined milestones and outcomes, ensuring that your cloud strategy aligns with your broader business objectives.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Management is handled through direct collaboration with AWS Professional Services teams. Project tracking often involves shared dashboards and regular strategic workshops.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Strategic Roadmap Development, Migration Acceleration, and Modernization Consulting.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/professional-services/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 17. AWS Training -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>AWS Training</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Builds the internal skills required to successfully design, deploy, and operate cloud systems. It ensures that your workforce is proficient in modern cloud technologies, driving innovation and operational efficiency from within.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A learning-based model providing both digital and classroom training. It governs skill development through standardized learning paths and industry-recognized certifications that validate cloud expertise.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the AWS Skill Builder platform. Organizations can track employee progress and certification status via the training portal.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Digital Training, Classroom Courses, and AWS Certification exams.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/training/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 18. Private Market -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Private Market</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Enables centralized governance of cloud software procurement. It allows IT leaders to curate a pre-approved list of software products, ensuring that all third-party tools meet corporate security and compliance standards.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A governance-first model within the AWS Marketplace. It allows admins to define whitelist policies that restrict which Marketplace products can be purchased and deployed across the organization's AWS accounts.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Configured and managed through the AWS Marketplace console. Admins can customize the portal's branding and product list to provide a "company-internal" app store experience.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Curated Marketplace portal for corporate-approved software.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/marketplace/features/private-marketplace" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 19. Control Tower -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Control Tower</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Simplifies the setup and management of a secure, multi-account AWS environment. It establishes a "Landing Zone" based on best practices, ensuring that new accounts are automatically provisioned with the necessary guardrails and compliance checks.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                An orchestration-based model that automates account creation and configuration. It governs the environment through mandatory and elective "Guardrails"—policies that enforce security baselines and prevent drift from best practices.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Managed through the AWS Control Tower console. It provides a centralized dashboard for monitoring compliance and managing the account factory across the entire organization.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Account Factory, Centralized Logging, Audit account, and Guardrail management.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/controltower/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
+
+                <!-- 20. Well-Arch Tool -->
+                <div class="cube-tile" onclick="toggleTile(this)">
+                    <h3>Well-Arch Tool</h3>
+                    <div class="tile-content">
+                        <ul>
+                            <li><strong>Strategic Value & Core Utility</strong>
+                                Provides a consistent process for reviewing and improving cloud architectures. It identifies high-risk areas in your workloads and offers actionable recommendations based on the six pillars of the AWS Well-Architected Framework.
+                            </li>
+                            <li><strong>Provisioning & Governance Model</strong>
+                                A free tool available to all AWS customers. It governs the architectural review process by providing a structured set of questions and best practices to measure your workloads against proven cloud standards.
+                            </li>
+                            <li><strong>Deployment & Management Interface</strong>
+                                Accessed through the AWS Well-Architected Tool console. It allows you to create and track "Workload" reviews, documenting progress as you implement recommended architectural improvements.
+                            </li>
+                            <li><strong>Integrated Ecosystem & Applications</strong>
+                                Review console, 6-pillar framework (Security, Cost, etc.), and Improvement Plans.
+                            </li>
+                        </ul>
+                        <div class="source">Source: <a href="https://aws.amazon.com/well-architected/tool/" target="_blank">AWS Official</a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
