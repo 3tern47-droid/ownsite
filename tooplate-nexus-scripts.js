@@ -1,59 +1,37 @@
-/*   JavaScript Document
+function toggleTile(element) {
+    const isExpanded = element.classList.contains('expanded');
+    
+    // Close all other tiles in the same side
+    const parentSide = element.closest('.split-side');
+    const allTiles = parentSide.querySelectorAll('.cube-tile');
+    
+    allTiles.forEach(tile => {
+        tile.classList.remove('expanded');
+    });
 
-Tooplate 2146 Nexus Brew
-
-https://www.tooplate.com/view/2146-nexus-brew
-
-*/
-
-// Independent Scrolling Logic
-const leftSide = document.getElementById('left-side');
-const rightSide = document.getElementById('right-side');
-
-// Smooth scrolling for navigation links targeting specific sides
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-   anchor.addEventListener('click', function (e) {
-      const targetId = this.getAttribute('href');
-      const target = document.querySelector(targetId);
-
-      if (target) {
-         e.preventDefault();
-         // Find which container the target is in
-         const container = target.closest('.split-side');
-         if (container) {
-             container.scrollTo({
-                top: target.offsetTop - 20,
-                behavior: 'smooth'
-             });
-         } else {
-             target.scrollIntoView({ behavior: 'smooth' });
-         }
-      }
-   });
-});
-
-// Active navigation link detection for split containers
-function updateActiveLink() {
-   let current = '';
-   const sections = document.querySelectorAll('.tile');
-   
-   sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const container = section.closest('.split-side');
-      if (container) {
-          if (container.scrollTop >= sectionTop - 100) {
-             current = section.getAttribute('id');
-          }
-      }
-   });
-
-   document.querySelectorAll('.nav-link').forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href').substring(1) === current) {
-         link.classList.add('active');
-      }
-   });
+    // If it wasn't expanded, expand it now
+    if (!isExpanded) {
+        element.classList.add('expanded');
+        // Scroll to the tile
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
 }
 
-if (leftSide) leftSide.addEventListener('scroll', updateActiveLink);
-if (rightSide) rightSide.addEventListener('scroll', updateActiveLink);
+// Add event listener for close buttons
+document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('close-tile')) {
+        e.stopPropagation();
+        e.target.closest('.cube-tile').classList.remove('expanded');
+    }
+});
+
+// Mobile menu toggle (if needed, though I removed it from HTML for simplicity)
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+}
