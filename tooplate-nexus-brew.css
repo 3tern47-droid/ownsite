@@ -222,10 +222,17 @@ body::before {
 }
 
 .provider-logo {
-    width: 50px;
-    height: 50px;
-    fill: var(--neon-blue);
-    filter: drop-shadow(0 0 8px var(--neon-blue));
+    width: auto;
+    height: 45px; /* Fixed height, variable width */
+    max-width: 120px;
+    fill: currentColor;
+    color: var(--neon-blue);
+    filter: drop-shadow(0 0 10px rgba(0, 191, 255, 0.4));
+    transition: transform 0.3s ease;
+}
+
+.provider-logo:hover {
+    transform: scale(1.1);
 }
 
 /* Nav & Footer */
