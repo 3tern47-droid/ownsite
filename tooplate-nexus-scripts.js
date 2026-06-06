@@ -1,37 +1,58 @@
+/**
+ * License Matrix Core Logic
+ * - Secure tile toggling
+ * - Context menu prevention
+ * - Mobile optimization support
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Disable right-click as requested
+    document.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        return false;
+    }, false);
+
+    // Disable common copy/view-source shortcuts
+    document.addEventListener('keydown', (e) => {
+        if (
+            (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c' || e.key === 'v')) ||
+            (e.metaKey && (e.key === 'u' || e.key === 's' || e.key === 'c' || e.key === 'v')) ||
+            e.key === 'F12'
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    });
+});
+
+/**
+ * Toggles the expanded state of a license tile
+ * @param {HTMLElement} element - The tile element clicked
+ */
 function toggleTile(element) {
+    if (!element) return;
+
     const isExpanded = element.classList.contains('expanded');
     
-    // Close all other tiles in the same side
+    // Select all tiles in the current side to close them
     const parentSide = element.closest('.split-side');
+    if (!parentSide) return;
+
     const allTiles = parentSide.querySelectorAll('.cube-tile');
     
     allTiles.forEach(tile => {
-        tile.classList.remove('expanded');
+        if (tile !== element) {
+            tile.classList.remove('expanded');
+        }
     });
 
-    // If it wasn't expanded, expand it now
+    // Toggle the clicked tile
+    element.classList.toggle('expanded');
+
+    // Scroll into view if expanded
     if (!isExpanded) {
-        element.classList.add('expanded');
-        // Scroll to the tile
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
     }
-}
-
-// Add event listener for close buttons
-document.addEventListener('click', function(e) {
-    if (e.target.classList.contains('close-tile')) {
-        e.stopPropagation();
-        e.target.closest('.cube-tile').classList.remove('expanded');
-    }
-});
-
-// Mobile menu toggle (if needed, though I removed it from HTML for simplicity)
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
 }
