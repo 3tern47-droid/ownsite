@@ -176,7 +176,7 @@ body::before {
 .cube-tile.expanded h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    background: var(--muted-gradient);
+    background: linear-gradient(to right, #00BFFF, #87CEEB, #1E90FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 1px solid rgba(0, 191, 255, 0.2);
