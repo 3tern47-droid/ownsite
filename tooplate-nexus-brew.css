@@ -7,9 +7,9 @@
 }
 
 :root {
-	--primary-gradient: linear-gradient(135deg, #000000, #00BFFF, #1E90FF);
-	--secondary-gradient: linear-gradient(45deg, #00BFFF, #000000, #87CEEB);
-	--muted-gradient: linear-gradient(135deg, #000000, #104E8B, #00BFFF);
+	--primary-gradient: linear-gradient(135deg, #00BFFF, #1E90FF, #87CEEB);
+	--secondary-gradient: linear-gradient(45deg, #00BFFF, #87CEEB, #1E90FF);
+	--muted-gradient: linear-gradient(135deg, #00BFFF, #104E8B, #1E90FF);
 	--dark-bg: #000000;
 	--card-bg: rgba(0, 0, 0, 0.85);
 	--text-primary: #f0faff;
